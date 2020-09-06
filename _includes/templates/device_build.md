@@ -4,8 +4,8 @@
 ## Introduction
 
 These instructions will hopefully assist you to start with a stock {{ device.vendor }} {{ device.name }}, unlock the bootloader (if necessary), and then download
-the required tools as well as the very latest source code for PixelExperience (based on Google’s Android operating system) for your device. Using these, you can build both
-a PixelExperience installation zip and a PixelExperience Recovery image and install them on your device.
+the required tools as well as the very latest source code for Komodo OS (based on Google’s Android operating system) for your device. Using these, you can build both
+a Komodo OS installation zip and a Komodo OS Recovery image and install them on your device.
 
 It is difficult to say how much experience is necessary to follow these instructions. While this guide is certainly not for the extremely uninitiated,
 these steps shouldn’t require a PhD in software development either. Some readers will have no difficulty and breeze through the steps easily.
@@ -34,7 +34,7 @@ Any recent 64-bit version should work great, but the latest Long Term Support (L
 
 Let's begin!
 
-## Build PixelExperience and PixelExperience Recovery
+## Build Komodo OS and Komodo OS Recovery
 
 {% include alerts/note.html content="You only need to do these steps once. If you have already prepared your build environment and downloaded the source code,
 skip to [Prepare the device-specific code](#prepare-the-device-specific-code)" %}
@@ -63,7 +63,7 @@ Then, run `source ~/.profile` to update your environment.
 
 ### Install the build packages
 
-Several packages are needed to build PixelExperience. You can install these using your distribution's package manager.
+Several packages are needed to build Komodo OS. You can install these using your distribution's package manager.
 
 {% include alerts/tip.html content="A [package manager](https://en.wikipedia.org/wiki/Package_manager) in Linux is a system used to install or remove software
 (usually originating from the Internet) on your computer. With Ubuntu, you can use the Ubuntu Software Center. Even better, you may also use the `apt-get install`
@@ -77,7 +77,7 @@ command directly in the Terminal." %}
 {%- endif -%}
 {%- endcapture -%}
 
-To build PixelExperience, you'll need:
+To build Komodo OS, you'll need:
 
 * `bc bison build-essential ccache curl flex g++-multilib gcc-multilib git gnupg gperf imagemagick
    lib32ncurses5-dev lib32readline-dev lib32z1-dev liblz4-tool libncurses5 libncurses5-dev
@@ -95,9 +95,9 @@ While for Ubuntu versions older than 16.04 (xenial), install:
 
 #### Java
 
-Different versions of PixelExperience require different JDK (Java Development Kit) versions.
+Different versions of Komodo OS require different JDK (Java Development Kit) versions.
 
-* PixelExperience Pie-Ten: OpenJDK 1.9 (included by default)
+* Komodo OS Ten: OpenJDK 1.9 (included by default)
 
 ### Create the directories
 
@@ -110,7 +110,7 @@ mkdir -p ~/bin
 mkdir -p ~/android/pe
 ```
 
-The `~/bin` directory will contain the git-repo tool (commonly named "repo") and the `~/android/pe` directory will contain the source code of PixelExperience.
+The `~/bin` directory will contain the git-repo tool (commonly named "repo") and the `~/android/pe` directory will contain the source code of Komodo OS.
 
 ### Install the `repo` command
 
@@ -142,7 +142,7 @@ git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
 ```
 
-### Initialize the PixelExperience source repository
+### Initialize the Komodo OS source repository
 
 The following branches can be used to build for the {{ device.vendor }} {{ device.name }}:
 
@@ -156,7 +156,7 @@ Enter the following to initialize the repository:
 
 ```
 cd ~/android/pe
-repo init -u https://github.com/PixelExperience/manifest -b branch_name
+repo init -u https://github.com/Komodo-OS-Rom/manifest -b branch_name
 ```
 
 ### Download the source code
@@ -169,7 +169,7 @@ repo sync -j$(nproc --all) -c -j$(nproc --all) --force-sync --no-clone-bundle --
 
 {% include alerts/note.html content="This may take a while, depending on your internet speed. Go and have a beer/coffee/tea/nap in the meantime!" %}
 
-{% include alerts/tip.html content="The `repo sync` command is used to update the latest source code from PixelExperience. Remember it, as you may want to
+{% include alerts/tip.html content="The `repo sync` command is used to update the latest source code from Komodo OS. Remember it, as you may want to
 do it every few days to keep your code base fresh and up-to-date." %}
 
 ### Prepare the device-specific code
@@ -236,14 +236,14 @@ There you'll find all the files that were created. The two files of more interes
 
 {% if device.is_ab_device %}
 {% if device.has_recovery_partition %}
-1. `recovery.img`, which is the PixelExperience recovery image.
+1. `recovery.img`, which is the Komodo OS recovery image.
 {% else %}
-1. `boot.img`, which is the PixelExperience boot image, and contains the recovery-ramdisk.
+1. `boot.img`, which is the Komodo OS boot image, and contains the recovery-ramdisk.
 {% endif %}
 {% else %}
-1. `recovery.img`, which is the PixelExperience recovery image.
+1. `recovery.img`, which is the Komodo OS recovery image.
 {% endif %}
-2. A zip file whose name starts with 'PixelExperience_', which is the PixelExperience
+2. A zip file whose name starts with 'KomodoOS_', which is the Komodo OS
 installer package.
 
 ### Success! So... what's next?
@@ -253,4 +253,4 @@ hopefully you've learned a bit on the way and had some fun too.
 
 ## To get assistance
 
-* [Telegram group](https://t.me/pixelexperiencechat)
+* [Telegram group](https://t.me/KomodoOSGroup)

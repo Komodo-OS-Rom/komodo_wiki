@@ -7,14 +7,14 @@
 {% include alerts/warning_bootloader_not_unlockable.html %}
 {% endif %}
 
-## Get PixelExperience for the {{ device.vendor }} {{ device.name }}
-[Get the builds here](https://download.pixelexperience.org/{{ device.codename }})
+## Get Komodo OS for the {{ device.vendor }} {{ device.name }}
+[Get the builds here](https://device.komodo-os.my.id/dl/{{ device.codename }})
 
 ## Guides
 
 - [Installation]({{ "devices/" | append: device.codename | append: "/install" | relative_url }})
 - [Build for yourself]({{ "devices/" | append: device.codename | append: "/build" | relative_url }})
-- [Update to a newer build of the same PixelExperience version]({{ "devices/" | append: device.codename | append: "/update" | relative_url }})
+- [Update to a newer build of the same Komodo OS version]({{ "devices/" | append: device.codename | append: "/update" | relative_url }})
 - [Upgrade to a higher Android version (e.g. Android 10 -> Android 11)]({{ "devices/" | append: device.codename | append: "/upgrade" | relative_url }})
 
 {% if device.note_show and device.note_show == true %}
@@ -34,4 +34,4 @@
 
 ## Find help online
 
-You can find assistance with PixelExperience on [our Telegram group](https://t.me/pixelexperiencechat).
+You can find assistance with Komodo OS on [our Telegram group](https://t.me/KomodoOSGroup).

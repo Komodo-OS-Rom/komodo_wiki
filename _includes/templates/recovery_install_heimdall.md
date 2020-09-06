@@ -56,7 +56,7 @@ heimdall print-pit
 {% endif %}
 {% include alerts/tip.html content="Ensure you download the `.img` file and not the `.tar` or `.tar.md5` versions." %}
 {% else %}
-1. Download a custom recovery - you can download [PixelExperience Recovery](https://download.pixelexperience.org/{{ custom_recovery_codename }}). Simply download the latest recovery file.
+1. Download a custom recovery - you can download [Komodo OS Recovery](https://device.komodo-os.my.id/dl/{{ custom_recovery_codename }}). Simply download the latest recovery file.
 {% endif %}
 2. Power off the device, and boot it into download mode:
     * {{ device.download_boot }}

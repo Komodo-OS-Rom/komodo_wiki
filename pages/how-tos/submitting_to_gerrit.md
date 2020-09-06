@@ -10,14 +10,14 @@ tags:
 
 ## Initial setup
 
-If you haven't yet successfully downloaded the source and generated a build of PixelExperience, make sure you are familiar with those steps. Information on doing a build is available in the build guide for [your device]({{ "/devices" | relative_url }}).
+If you haven't yet successfully downloaded the source and generated a build of Komodo OS, make sure you are familiar with those steps. Information on doing a build is available in the build guide for [your device]({{ "/devices" | relative_url }}).
 
-Setup an account on [Gerrit](https://gerrit.pixelexperience.org) and configure your Gerrit username in the Gerrit portal under **Settings -> HTTP Password**.
+Setup an account on [Gerrit](https://gerrit.komodo-os.my.id) and configure your Gerrit username in the Gerrit portal under **Settings -> HTTP Password**.
 
 Now make sure your local git username matches with your Gerrit username:
 
 ```
-git config --global review.gerrit.pixelexperience.org.username "gerrit username"
+git config --global review.gerrit.komodo-os.my.id.username "gerrit username"
 ```
 
 If you already have SSH keys set up (e.g. for GitHub), skip the following two steps.
@@ -68,7 +68,7 @@ Your shell will then navigate to the root of the sources, `~/android/pe` or give
 
 ### Uploading your changes
 
-First, you need to start a topic branch. This branch holds the changes you make to the files on your computer that you will ultimately send to the PixelExperience' Gerrit instance for review. Create your topic branch:
+First, you need to start a topic branch. This branch holds the changes you make to the files on your computer that you will ultimately send to the Komodo OS' Gerrit instance for review. Create your topic branch:
 
 ```
 repo start <branch name> <project path>
@@ -206,11 +206,11 @@ ssh-keygen -t dsa -C "your@email.com"
 
 ## Getting your submission reviewed/merged
 
-All submitted patches go through a code review process prior to being merged. In addition to peer reviews, certain project members have the capability to merge your changes into PixelExperience.
+All submitted patches go through a code review process prior to being merged. In addition to peer reviews, certain project members have the capability to merge your changes into Komodo OS.
 To make sure they get informed:
 
 1) Add reviewers:
-  - For general repos, add the [Head Developers](https://download.pixelexperience.org/about#team)
+  - For general repos, add the [Head Developers](https://komodo-os.my.id/team.html)
 
 2) Set the [proper labels](help/using-gerrit/#reviewing-a-patch) to indicate your patch is ready
 
@@ -262,4 +262,4 @@ See [Git Immersion](http://gitimmersion.com/) for more information.
 
 [Git and repo overview](https://source.android.com/source/developing)
 
-[Gerrit Documentation](https://gerrit.pixelexperience.org/Documentation/index.html)
+[Gerrit Documentation](https://gerrit.komodo-os.my.id/Documentation/index.html)

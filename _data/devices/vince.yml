@@ -16,7 +16,6 @@ codename: vince
 cpu: Cortex-A53
 cpu_cores: '8'
 cpu_freq: 2.0 GHz
-deprecated: true
 depth: 8.1 mm (0.32 in)
 download_boot: With the device powered off, hold <kbd>Volume Down</kbd> + <kbd>Power</kbd>.
   Keep holding both buttons until the word "FASTBOOT" appears on the screen, then
@@ -24,7 +23,7 @@ download_boot: With the device powered off, hold <kbd>Volume Down</kbd> + <kbd>P
 gpu: Adreno 506
 height: 158.5 mm (6.24 in)
 install_method: fastboot_xiaomi
-maintainers: []
+maintainers: [Kry9toN]
 name: Redmi Note 5/Plus
 network:
 - 2G GSM
@@ -54,6 +53,5 @@ uses_twrp: true
 vendor: Xiaomi
 versions:
 - ten
-- ten_plus
 width: 75.5 mm (2.97 in)
 wifi: 802.11 a/b/g/n/ac

@@ -36,9 +36,9 @@ There are no recovery installation instructions for this discontinued device.
 {% include {{ path }} %}
 {% endif %}
 
-## Installing PixelExperience from recovery
+## Installing Komodo OS from recovery
 
-1. Download the [PixelExperience installation package](https://download.pixelexperience.org/{{ device.codename }}) that you would like to install or [build]({{ "devices/" | append: device.codename | append: "/build" | relative_url }}) the package yourself.
+1. Download the [Komodo OS installation package](https://device.komodo-os.my.id/dl/{{ device.codename }}) that you would like to install or [build]({{ "devices/" | append: device.codename | append: "/build" | relative_url }}) the package yourself.
 2. If you are not in recovery, reboot into recovery:
     * {{ device.recovery_boot }}
 {% if device.uses_twrp %}
@@ -48,13 +48,13 @@ There are no recovery installation instructions for this discontinued device.
 {% else %}
 5. Return to the previous menu and tap **Advanced Wipe**, then select the *Cache* and *System* partitions and then **Swipe to Wipe**.
 {% endif %}
-6. Sideload the PixelExperience `.zip` package:
+6. Sideload the Komodo OS `.zip` package:
     * On the device, select "Advanced", "ADB Sideload", then swipe to begin sideload.
     * On the host machine, sideload the package using: `adb sideload filename.zip`
 {% else %}
 3. Now tap **Factory Reset**, then **Format data / factory reset** and continue with the formatting process. This will remove encryption and delete all files stored in the internal storage, as well as format your cache partition (if you have one).
 5. Return to the main menu.
-6. Sideload the PixelExperience `.zip` package:
+6. Sideload the Komodo OS `.zip` package:
     * On the device, select "Apply Update", then "Apply from ADB" to begin sideload.
     * On the host machine, sideload the package using: `adb sideload filename.zip`
 {% endif %}
@@ -75,4 +75,4 @@ There are no recovery installation instructions for this discontinued device.
 
 ## Get assistance
 
-If you have any questions or get stuck on any of the steps, feel free to ask on [our Telegram group](https://t.me/pixelexperiencechat).
+If you have any questions or get stuck on any of the steps, feel free to ask on [our Telegram group](https://t.me/KomodoOSGroup).
