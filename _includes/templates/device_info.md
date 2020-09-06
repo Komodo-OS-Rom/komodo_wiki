@@ -34,4 +34,4 @@
 
 ## Find help online
 
-You can find assistance with Komodo OS on [our Telegram group](https://t.me/KomodoOSGroup).
+You can find assistance with Komodo OS on [our Telegram group](https://t.me/KomodOSGroup).

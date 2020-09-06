@@ -41,4 +41,4 @@ The updater app does not support upgrades from one version of Komodo OS to anoth
 
 ## Get assistance
 
-If you have any questions or get stuck on any of the steps, feel free to ask on [our Telegram group](https://t.me/KomodoOSGroup).
+If you have any questions or get stuck on any of the steps, feel free to ask on [our Telegram group](https://t.me/KomodOSGroup).

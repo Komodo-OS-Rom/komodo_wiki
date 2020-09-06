@@ -75,4 +75,4 @@ There are no recovery installation instructions for this discontinued device.
 
 ## Get assistance
 
-If you have any questions or get stuck on any of the steps, feel free to ask on [our Telegram group](https://t.me/KomodoOSGroup).
+If you have any questions or get stuck on any of the steps, feel free to ask on [our Telegram group](https://t.me/KomodOSGroup).

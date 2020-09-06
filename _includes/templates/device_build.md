@@ -253,4 +253,4 @@ hopefully you've learned a bit on the way and had some fun too.
 
 ## To get assistance
 
-* [Telegram group](https://t.me/KomodoOSGroup)
+* [Telegram group](https://t.me/KomodOSGroup)
