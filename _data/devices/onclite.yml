@@ -22,7 +22,7 @@ gpu: Adreno 506
 height: 158.73 mm (6.25 in)
 install_method: fastboot_xiaomi
 maintainers: TheSync
-name: Xiaomi Redmi 7
+name: Redmi 7
 network:
 - 2G GSM
 - 3G UMTS
