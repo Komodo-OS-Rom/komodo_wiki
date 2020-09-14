@@ -1,0 +1,58 @@
+architecture: arm64
+battery:
+  capacity: 3000
+  removable: false
+  tech: Li-Ion
+before_install: before_install_riva
+bluetooth:
+  profiles:
+  - A2DP
+  spec: '4.2'
+cameras:
+- flash: LED
+  info: 13 MP
+- flash: ''
+  info: 5 MP
+codename: riva
+cpu: Cortex-A53
+cpu_cores: '4'
+cpu_freq: 1.4 GHz
+depth: 8.4 mm (0.33 in)
+download_boot: With the device powered off, hold <kbd>Volume Down</kbd> + <kbd>Power</kbd>.
+  Keep holding both buttons until the word "FASTBOOT" appears on the screen, then
+  release.
+gpu: Adreno 308
+height: 140.4 mm (5.53 in)
+install_method: fastboot_xiaomi
+maintainers: Chann × Rizal
+name: Redmi 5A
+network:
+- 2G CDMA
+- 2G GSM
+- 3G UMTS
+- 4G LTE
+peripherals:
+- Accelerometer
+- Dual Sim
+- Proximity sensor
+- Compass
+- GPS
+- Infrared sensor
+- FM radio
+ram: 2/3 GB
+recovery_boot: With the device powered off, hold <kbd>Volume Up</kbd> + <kbd>Power</kbd>.
+  Keep holding both buttons until the "MI" logo appears on the screen, then release.
+release: 2017-12
+screen: 127 mm (5.0 in)
+screen_ppi: '296'
+screen_res: 720x1280
+screen_tech: IPS LCD
+sdcard: up to 128 GB (dedicated slot)
+soc: Qualcomm MSM8917 Snapdragon 425
+storage: 16/32 GB
+uses_twrp: true
+vendor: Xiaomi
+versions:
+- ten
+width: 70.1 mm (2.76 in)
+wifi: 802.11  b/g/n, Wi-Fi Direct, hotspot
