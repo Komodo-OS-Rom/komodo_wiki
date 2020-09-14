@@ -10,8 +10,11 @@ bluetooth:
 cameras:
 - flash: LED
   info: 64 MP
+- flash: LED
   info: 8 MP
+- flash: LED
   info: 5 MP
+- flash: LED
   info: 2 MP HDR, Panorama
 - flash: ''
   info: 16 MP HDR, Panorama
