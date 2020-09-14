@@ -9,7 +9,10 @@ bluetooth:
   spec: 5.0 + A2DP + LE
 cameras:
 - flash: LED
-  info: 64 MP + 8 MP + 5MP + 2 MP HDR, Panorama
+  info: 64 MP
+  info: 8 MP
+  info: 5 MP
+  info: 2 MP HDR, Panorama
 - flash: ''
   info: 16 MP HDR, Panorama
 codename: joyeuse
